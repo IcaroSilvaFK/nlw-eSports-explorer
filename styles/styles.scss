@@ -1,0 +1,93 @@
+@import './reset.scss';
+@import './variables.scss';
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    background-image: url('../../assets/AvatarBackground.svg');
+    background-repeat: no-repeat;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    object-fit: contain;
+
+    border: 4px solid transparent;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 22px;
+
+  margin-top: 160px;
+}
+.container {
+  max-width: 580px;
+  width: 100%;
+
+  border-radius: $radii;
+  overflow: hidden;
+
+  padding-top: 4px;
+
+  background: linear-gradient(
+    to right,
+    #9572fc,
+    #9572fc,
+    #8885ef,
+    #43e7ad,
+    #43e7ad,
+    #43e7ad,
+    #e2d45c,
+    #e2d45c,
+    #e2d45c
+  );
+}
+.card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+
+  padding: 22px;
+
+  border-radius: $radii;
+
+  background: $backgroundCard;
+
+  color: $white;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  span {
+    color: $subTitleColor;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  ul {
+    display: flex;
+
+    li + li {
+      margin-left: 20px;
+    }
+  }
+}

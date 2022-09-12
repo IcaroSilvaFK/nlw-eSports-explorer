@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  padding: 44px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}

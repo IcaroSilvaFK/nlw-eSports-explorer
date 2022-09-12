@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  padding: 44px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div {
+  background-image: url("../../assets/AvatarBackground.svg");
+  background-repeat: no-repeat;
+}
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 4px solid transparent;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 160px;
+}
+
+.container {
+  max-width: 580px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-top: 4px;
+  background: linear-gradient(to right, #9572fc, #9572fc, #8885ef, #43e7ad, #43e7ad, #43e7ad, #e2d45c, #e2d45c, #e2d45c);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 22px;
+  border-radius: 8px;
+  background: #2a2634;
+  color: #fff;
+}
+.card h3 {
+  font-size: 1.5rem;
+}
+.card span {
+  color: #a1a1aa;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card ul {
+  display: flex;
+}
+.card ul li + li {
+  margin-left: 20px;
+}
